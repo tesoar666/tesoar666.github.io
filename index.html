@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tesoar - Pr-xy</title>
+</head>
+<body>
+    <div class="title">
+        Tesoar Unblocker
+    </div>
+    
+    <input class="searchbar" type="text" placeholder="Search Google or type a URL... (https:// required!)">
+    <button class="search-button">Continue...</button>
+
+    <div id="particles-js"></div>
+    
+    <div class="searchmodal" id="searchModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe id="searchIframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>
